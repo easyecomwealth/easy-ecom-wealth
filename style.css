@@ -4,10 +4,102 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Services - Easy Ecom Wealth</title>
-<meta name="description" content="Comprehensive premium services for marketplace growth, PPC, creative, and web development.">
+<meta name="description" content="Premium services for marketplace growth, PPC, creative, and web development.">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet">
+<style>
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://images.unsplash.com/photo-1605902711622-cfb43c443f36?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  color: #fff;
+  padding: 120px 20px;
+  text-align: center;
+  position: relative;
+}
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  animation: fadeInDown 1s ease forwards;
+}
+.hero-section p {
+  font-size: 1.25rem;
+  animation: fadeInUp 1s 0.3s ease forwards;
+  opacity: 0;
+}
+@keyframes fadeInDown { from {opacity:0; transform:translateY(-20px);} to {opacity:1; transform:translateY(0);} }
+@keyframes fadeInUp { from {opacity:0; transform:translateY(20px);} to {opacity:1; transform:translateY(0);} }
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 50px;
+  position: relative;
+}
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--accent);
+  margin: 10px auto 0 auto;
+  border-radius: 2px;
+}
+
+/* Service Cards */
+.service-box {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(13,27,42,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(13,27,42,0.1);
+}
+
+/* Animated Icons */
+.service-box i {
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 20px;
+  transition: all 0.4s ease;
+}
+.service-box:hover i {
+  color: var(--accent);
+  transform: rotate(15deg) scale(1.2);
+}
+
+/* Text Styling */
+.service-box h4 {
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 15px;
+}
+.service-box p {
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  .hero-section { padding: 80px 20px; }
+  .service-box { padding: 25px; }
+}
+</style>
 </head>
 <body>
 
@@ -36,9 +128,9 @@
 </nav>
 
 <!-- Hero Section -->
-<section class="hero-section" style="background:url('https://images.unsplash.com/photo-1605902711622-cfb43c443f36?auto=format&fit=crop&w=1600&q=80') center/cover; position:relative; padding:100px 20px;">
-  <div class="hero-overlay text-center">
-    <h1 class="display-5 fw-bold">Premium Services for Marketplace Success</h1>
+<section class="hero-section">
+  <div class="hero-overlay">
+    <h1>Premium Services for Marketplace Success</h1>
     <p>We provide end-to-end e-commerce solutions, creative strategy, and web development to help brands scale faster and smarter.</p>
   </div>
 </section>
@@ -46,42 +138,54 @@
 <!-- Services Section -->
 <main class="py-5">
   <div class="container-sm">
-    <h2 class="section-title text-center">Our Services</h2>
+    <h2 class="section-title">Our Services</h2>
     <div class="row g-4 mt-3">
+      <!-- E-commerce Management -->
       <div class="col-md-6 col-lg-4">
         <div class="service-box">
+          <i class="fas fa-store"></i>
           <h4>E-commerce Management</h4>
-          <p>Complete account management including onboarding, catalog & listings, inventory, performance monitoring, and returns handling for marketplaces like Amazon, Flipkart, and Walmart.</p>
+          <p>Complete account management including onboarding, catalog & listings, inventory, performance monitoring, and returns handling.</p>
         </div>
       </div>
+      <!-- Performance Marketing -->
       <div class="col-md-6 col-lg-4">
         <div class="service-box">
+          <i class="fas fa-bullseye"></i>
           <h4>Performance Marketing</h4>
-          <p>PPC campaigns, bid & keyword management, DSP and retargeting to maximize ROAS and drive consistent sales growth across multiple marketplaces.</p>
+          <p>PPC campaigns, bid & keyword management, DSP and retargeting to maximize ROAS and drive consistent sales growth.</p>
         </div>
       </div>
+      <!-- Creative & Content -->
       <div class="col-md-6 col-lg-4">
         <div class="service-box">
+          <i class="fas fa-lightbulb"></i>
           <h4>Creative & Content</h4>
-          <p>Product photography, A+ content, video creatives, listing copywriting, and compelling brand storytelling to capture attention and boost conversions.</p>
+          <p>Product photography, A+ content, video creatives, listing copywriting, and compelling brand storytelling.</p>
         </div>
       </div>
+      <!-- Web Development -->
       <div class="col-md-6 col-lg-4">
         <div class="service-box">
+          <i class="fas fa-code"></i>
           <h4>Web Development</h4>
-          <p>Shopify & WordPress storefronts, UX/UI design, responsive layout, conversion optimization, and analytics setup for a seamless user experience.</p>
+          <p>Shopify & WordPress storefronts, UX/UI design, responsive layout, conversion optimization, and analytics setup.</p>
         </div>
       </div>
+      <!-- Analytics & Reporting -->
       <div class="col-md-6 col-lg-4">
         <div class="service-box">
+          <i class="fas fa-chart-line"></i>
           <h4>Analytics & Reporting</h4>
-          <p>Custom dashboards, marketplace reports, data-driven insights, and actionable recommendations to optimize performance and strategy.</p>
+          <p>Custom dashboards, marketplace reports, data-driven insights, and actionable recommendations to optimize performance.</p>
         </div>
       </div>
+      <!-- Consulting & Strategy -->
       <div class="col-md-6 col-lg-4">
         <div class="service-box">
+          <i class="fas fa-rocket"></i>
           <h4>Consulting & Strategy</h4>
-          <p>Expert consultation on marketplace growth, pricing, inventory, and marketing strategies to scale your brand efficiently and profitably.</p>
+          <p>Expert consultation on marketplace growth, pricing, inventory, and marketing strategies to scale your brand efficiently.</p>
         </div>
       </div>
     </div>
@@ -109,17 +213,4 @@
         <h5>Follow Us</h5>
         <div class="social-icons">
           <a href="#" aria-label="Facebook"><i class="fab fa-facebook fa-lg"></i></a>
-          <a href="#" aria-label="Instagram" style="margin-left:12px"><i class="fab fa-instagram fa-lg"></i></a>
-          <a href="#" aria-label="YouTube" style="margin-left:12px"><i class="fab fa-youtube fa-lg"></i></a>
-          <a href="#" aria-label="LinkedIn" style="margin-left:12px"><i class="fab fa-linkedin fa-lg"></i></a>
-        </div>
-      </div>
-    </div>
-    <hr style="border-color:rgba(255,255,255,0.06)">
-    <p class="text-center mb-0">© 2025 Easy Ecom Wealth. All Rights Reserved.</p>
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+          <a href="#" aria-label="Instagram" style="margin-left:
