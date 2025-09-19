@@ -1,18 +1,125 @@
-/* style.css - brand styles */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-:root{--primary:#0056b3;--accent:#ff9800;--bg:#f7f9fc;--nav:#0d1b2a}
-body{font-family:'Poppins',Arial,Helvetica,sans-serif;background:var(--bg);color:#172031;margin:0}
-a{color:var(--primary);text-decoration:none}
-.navbar{background:var(--nav)!important}
-.navbar .nav-link{color:#fff!important}
-.hero-overlay{background:rgba(0,0,0,0.45);padding:40px;border-radius:10px}
-.section-title{color:var(--primary);font-weight:700;margin-bottom:22px}
-.service-box{background:#fff;padding:24px;border-radius:10px;box-shadow:0 6px 18px rgba(13,27,42,0.06);height:100%}
-footer{background:var(--nav);color:#ddd;padding:40px 0}
-.footer-links a{color:#ddd;text-decoration:none}
-.btn-primary{background:var(--primary);border:none}
-.badge-accent{background:var(--accent);color:#fff;padding:6px 10px;border-radius:6px;font-weight:600}
-.container-sm{max-width:1100px;margin:0 auto}
-.testimonial{background:#fff;padding:18px;border-radius:8px;box-shadow:0 6px 18px rgba(13,27,42,0.06);}
-.form-control:focus{box-shadow:none;border-color:var(--primary)}
-@media(max-width:767px){.hero-overlay{padding:22px}}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Services - Easy Ecom Wealth</title>
+<meta name="description" content="Comprehensive premium services for marketplace growth, PPC, creative, and web development.">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="assets/logo.png" alt="Easy Ecom Wealth" style="height:42px;margin-right:10px">
+      <span class="fw-bold text-white">EASY ECOM WEALTH</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="partners.html">Partners</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+        <li class="nav-item"><a class="nav-link" href="enquiry.html">Business Enquiry</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section" style="background:url('https://images.unsplash.com/photo-1605902711622-cfb43c443f36?auto=format&fit=crop&w=1600&q=80') center/cover; position:relative; padding:100px 20px;">
+  <div class="hero-overlay text-center">
+    <h1 class="display-5 fw-bold">Premium Services for Marketplace Success</h1>
+    <p>We provide end-to-end e-commerce solutions, creative strategy, and web development to help brands scale faster and smarter.</p>
+  </div>
+</section>
+
+<!-- Services Section -->
+<main class="py-5">
+  <div class="container-sm">
+    <h2 class="section-title text-center">Our Services</h2>
+    <div class="row g-4 mt-3">
+      <div class="col-md-6 col-lg-4">
+        <div class="service-box">
+          <h4>E-commerce Management</h4>
+          <p>Complete account management including onboarding, catalog & listings, inventory, performance monitoring, and returns handling for marketplaces like Amazon, Flipkart, and Walmart.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-box">
+          <h4>Performance Marketing</h4>
+          <p>PPC campaigns, bid & keyword management, DSP and retargeting to maximize ROAS and drive consistent sales growth across multiple marketplaces.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-box">
+          <h4>Creative & Content</h4>
+          <p>Product photography, A+ content, video creatives, listing copywriting, and compelling brand storytelling to capture attention and boost conversions.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-box">
+          <h4>Web Development</h4>
+          <p>Shopify & WordPress storefronts, UX/UI design, responsive layout, conversion optimization, and analytics setup for a seamless user experience.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-box">
+          <h4>Analytics & Reporting</h4>
+          <p>Custom dashboards, marketplace reports, data-driven insights, and actionable recommendations to optimize performance and strategy.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-box">
+          <h4>Consulting & Strategy</h4>
+          <p>Expert consultation on marketplace growth, pricing, inventory, and marketing strategies to scale your brand efficiently and profitably.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="container-sm">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <h5>Easy Ecom Wealth</h5>
+        <p>4/A Shraddha Shri Colony, Indore, Madhya Pradesh<br>Phone: +91 95894 43595<br>Email: <a href="mailto:easyecomwealth@gmail.com">easyecomwealth@gmail.com</a></p>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled footer-links">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="enquiry.html">Business Enquiry</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Follow Us</h5>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" aria-label="Instagram" style="margin-left:12px"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="#" aria-label="YouTube" style="margin-left:12px"><i class="fab fa-youtube fa-lg"></i></a>
+          <a href="#" aria-label="LinkedIn" style="margin-left:12px"><i class="fab fa-linkedin fa-lg"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr style="border-color:rgba(255,255,255,0.06)">
+    <p class="text-center mb-0">© 2025 Easy Ecom Wealth. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
