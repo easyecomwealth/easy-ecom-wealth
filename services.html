@@ -4,82 +4,42 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Services - Easy Ecom Wealth</title>
-<meta name="description" content="Premium e-commerce services, marketplace growth, creative content, PPC campaigns, and analytics solutions.">
+<meta name="description" content="Comprehensive premium services for marketplace growth, PPC, creative content, analytics, and web development.">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 <style>
-  :root {
-    --primary:#0056b3;
-    --accent:#ff9800;
-    --bg:#f7f9fc;
-    --nav:#0d1b2a;
-  }
-  body { font-family: 'Poppins', Arial, sans-serif; background: var(--bg); color:#172031; margin:0;}
+  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f9f9f9; color:#172031; }
   a { text-decoration:none; }
-  .navbar { background: var(--nav) !important; }
-  .navbar .nav-link { color:#fff !important; transition:0.3s;}
-  .navbar .nav-link:hover, .navbar .nav-link.active { color: var(--accent) !important; }
-
-  /* Hero */
-  .hero-section { position:relative; height:90vh; display:flex; align-items:center; justify-content:center; text-align:center; color:#fff; background: linear-gradient(135deg, #0056b3 0%, #00aaff 100%); overflow:hidden; }
-  .hero-section h1 { font-size:3rem; font-weight:700; animation: fadeInDown 1s ease forwards; opacity:0; }
-  .hero-section p { font-size:1.25rem; margin-top:15px; animation: fadeInUp 1s 0.3s ease forwards; opacity:0; }
-  @keyframes fadeInDown { from {opacity:0; transform:translateY(-20px);} to {opacity:1; transform:translateY(0);} }
-  @keyframes fadeInUp { from {opacity:0; transform:translateY(20px);} to {opacity:1; transform:translateY(0);} }
-
-  /* Floating shapes */
-  .floating-shape { position:absolute; width:80px; height:80px; border-radius:50%; background:rgba(255,255,255,0.15); animation: floatUpDown 6s ease-in-out infinite;}
-  .floating-shape:nth-child(1){top:20%; left:10%; animation-delay:0s;}
-  .floating-shape:nth-child(2){top:60%; left:25%; animation-delay:2s;}
-  .floating-shape:nth-child(3){top:40%; left:75%; animation-delay:4s;}
-  @keyframes floatUpDown {0%,100%{transform:translateY(0px);}50%{transform:translateY(-30px);}}
-
-  /* Section title */
-  .section-title { font-size:2rem; font-weight:700; text-align:center; color: var(--primary); margin-bottom:40px; position:relative; }
-  .section-title::after { content:''; display:block; width:60px; height:4px; background: var(--accent); margin:10px auto 0 auto; border-radius:2px; }
-
-  /* Service cards */
-  .service-card { background:#fff; padding:30px 25px; border-radius:12px; box-shadow:0 10px 30px rgba(13,27,42,0.06); transition: transform 0.3s, box-shadow 0.3s; height:100%; display:flex; flex-direction:column; }
-  .service-card:hover { transform:translateY(-10px); box-shadow:0 20px 40px rgba(13,27,42,0.1);}
-  .service-card i { font-size:3rem; color: var(--primary); margin-bottom:15px; transition: all 0.4s ease;}
-  .service-card:hover i { color: var(--accent); transform: rotate(15deg) scale(1.2); }
-  .service-card h4 { font-weight:600; margin-bottom:10px; }
-  .service-card p { flex-grow:1; color:#4b5563; font-size:0.95rem; line-height:1.6; }
-
-  /* Testimonials */
-  .testimonial { background:#fff; padding:20px; border-radius:12px; box-shadow:0 6px 18px rgba(13,27,42,0.06); text-align:center; }
-  .testimonial p { font-style:italic; margin-bottom:0; }
-
-  /* Stats */
-  .stats-counter { text-align:center; padding:50px 20px; background:#e0f7fa; border-radius:12px; margin-bottom:50px; }
-  .stats-counter h3 { font-size:2rem; color:var(--primary); margin-bottom:15px; }
-  .stats-counter p { font-size:1.1rem; color:#172031; }
-
-  /* Blog cards */
-  .blog-card { background:#fff; border-radius:12px; overflow:hidden; box-shadow:0 10px 30px rgba(13,27,42,0.06); transition: transform 0.3s; }
-  .blog-card:hover { transform:translateY(-10px); box-shadow:0 20px 40px rgba(13,27,42,0.1); }
-  .blog-card img { width:100%; height:180px; object-fit:cover; }
-  .blog-card h5 { margin:15px; font-weight:600; }
-  .blog-card p { margin:0 15px 15px 15px; color:#4b5563; font-size:0.95rem; }
-
-  /* FAQ */
-  .faq-item { background:#fff; border-radius:12px; padding:20px; margin-bottom:15px; box-shadow:0 8px 25px rgba(13,27,42,0.05);}
-  .faq-item h6 { cursor:pointer; }
-  .faq-answer { display:none; padding-top:10px; color:#4b5563; }
-
-  /* Footer */
-  footer { background: var(--nav); color:#d1d5db; padding:50px 0 20px 0; }
+  .navbar { background-color: #111827 !important; }
+  .navbar .nav-link { color:#fff !important; transition:0.3s; }
+  .navbar .nav-link:hover { color:#0ea5e9 !important; }
+  .hero-section { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1605902711622-cfb43c443f36?auto=format&fit=crop&w=1600&q=80') center/cover; color:#fff; padding:120px 20px; text-align:center; }
+  .hero-section h1 { font-size:3rem; font-weight:700; margin-bottom:20px; }
+  .hero-section p { font-size:1.25rem; }
+  .section-title { font-size:2rem; font-weight:700; text-align:center; margin-bottom:40px; position:relative; }
+  .section-title::after { content:''; display:block; width:60px; height:4px; background-color:#0ea5e9; margin:10px auto 0 auto; border-radius:2px; }
+  .service-card { background:#fff; border-radius:12px; padding:30px 25px; box-shadow:0 10px 30px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; height:100%; display:flex; flex-direction:column; }
+  .service-card:hover { transform:translateY(-10px); box-shadow:0 20px 40px rgba(0,0,0,0.1); }
+  .service-card h4 { color:#111827; font-weight:600; margin-bottom:15px; }
+  .service-card p { color:#4b5563; font-size:0.95rem; line-height:1.6; flex-grow:1; }
+  .testimonial { background:#fff; padding:20px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.06); text-align:center; }
+  .stats-box { background:#fff; padding:25px 20px; border-radius:12px; text-align:center; box-shadow:0 6px 20px rgba(0,0,0,0.05); transition:0.3s; }
+  .stats-box:hover { transform:translateY(-5px); box-shadow:0 12px 25px rgba(0,0,0,0.1); }
+  .blog-card { background:#fff; border-radius:12px; overflow:hidden; transition:transform 0.3s, box-shadow 0.3s; }
+  .blog-card img { width:100%; height:200px; object-fit:cover; }
+  .blog-card:hover { transform:translateY(-10px); box-shadow:0 20px 40px rgba(0,0,0,0.1); }
+  .faq-item { background:#fff; border-radius:8px; margin-bottom:15px; padding:20px; box-shadow:0 6px 18px rgba(0,0,0,0.05); }
+  footer { background-color:#111827; color:#d1d5db; padding:50px 0 20px 0; }
   footer a { color:#d1d5db; }
-  footer a:hover { color:var(--accent); }
-  .social-icons i { margin-right:12px; transition:0.3s; }
-  .social-icons i:hover { color:var(--accent); }
-
+  footer a:hover { color:#0ea5e9; }
+  .social-icons i { font-size:1.25rem; transition:color 0.3s; }
+  .social-icons i:hover { color:#0ea5e9; }
 </style>
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg sticky-top">
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="index.html">
       <img src="assets/logo.png" alt="Easy Ecom Wealth" style="height:42px;margin-right:10px">
@@ -102,163 +62,227 @@
   </div>
 </nav>
 
-<!-- Hero -->
+<!-- Hero Section -->
 <section class="hero-section">
-  <div class="floating-shape"></div>
-  <div class="floating-shape"></div>
-  <div class="floating-shape"></div>
-  <div class="hero-overlay">
-    <h1>Comprehensive Services for Marketplace Success</h1>
-    <p>We provide end-to-end solutions from creative content to analytics, helping brands scale globally across marketplaces.</p>
-    <div class="mt-4">
-      <a href="#services" class="btn btn-primary btn-lg me-2">Explore Services</a>
-      <a href="enquiry.html" class="btn btn-outline-light btn-lg">Get Started</a>
-    </div>
-  </div>
-</section>
-
-<main class="py-5">
-
-<!-- Services -->
-<section id="services" class="container-sm my-5">
-  <h2 class="section-title">Our Services</h2>
-  <div class="row g-4">
-    <div class="col-md-6 col-lg-4">
-      <div class="service-card">
-        <i class="fas fa-store"></i>
-        <h4>Marketplace Onboarding</h4>
-        <p>Account setup, catalog creation, compliance checks, and seamless onboarding for marketplaces without errors or delays.</p>
-      </div>
-    </div>
-    <div class="col-md-6 col-lg-4">
-      <div class="service-card">
-        <i class="fas fa-search"></i>
-        <h4>Listing Optimization</h4>
-        <p>SEO-friendly product listings with keyword research, A+ content, and optimized visuals to maximize visibility and conversions.</p>
-      </div>
-    </div>
-    <div class="col-md-6 col-lg-4">
-      <div class="service-card">
-        <i class="fas fa-bullseye"></i>
-        <h4>PPC & Ads Management</h4>
-        <p>Advanced bidding strategies, DSP campaigns, and retargeting to drive ROI and reduce advertising costs.</p>
-      </div>
-    </div>
-    <div class="col-md-6 col-lg-4">
-      <div class="service-card">
-        <i class="fas fa-paint-brush"></i>
-        <h4>Creative & Branding</h4>
-        <p>Product photography, lifestyle videos, listing copywriting, and brand storytelling to improve engagement and trust.</p>
-      </div>
-    </div>
-    <div class="col-md-6 col-lg-4">
-      <div class="service-card">
-        <i class="fas fa-chart-line"></i>
-        <h4>Analytics & Reporting</h4>
-        <p>Actionable insights through dashboards, reports, and KPI monitoring to optimize listings and campaigns.</p>
-      </div>
-    </div>
-    <div class="col-md-6 col-lg-4">
-      <div class="service-card">
-        <i class="fas fa-lightbulb"></i>
-        <h4>Consulting & Strategy</h4>
-        <p>Expert guidance on growth strategies, pricing, inventory, and marketing plans for maximum profitability.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Stats -->
-<section class="container my-5">
-  <div class="row g-4 text-center">
-    <div class="col-md-3 stats-counter">
-      <h3>120+</h3>
-      <p>Successful Marketplaces Launched</p>
-    </div>
-    <div class="col-md-3 stats-counter">
-      <h3>500+</h3>
-      <p>Clients Served Worldwide</p>
-    </div>
-    <div class="col-md-3 stats-counter">
-      <h3>95%</h3>
-      <p>Client Retention Rate</p>
-    </div>
-    <div class="col-md-3 stats-counter">
-      <h3>10K+</h3>
-      <p>Products Optimized</p>
-    </div>
-  </div>
-</section>
-
-<!-- Testimonials -->
-<section class="container my-5">
-  <h2 class="section-title text-center">Client Success Stories</h2>
-  <div class="row g-4">
-    <div class="col-md-4">
-      <div class="testimonial">
-        <p>“Our sales doubled within 3 months thanks to their listing optimization and ad strategies.”</p>
-        <strong>- Rajesh K.</strong>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="testimonial">
-        <p>“Seamless onboarding across multiple marketplaces with zero downtime.”</p>
-        <strong>- Priya S.</strong>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="testimonial">
-        <p>“Creative content and analytics helped us scale globally faster than expected.”</p>
-        <strong>- Vikram T.</strong>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Blog Section -->
-<section class="py-5" style="background:#f1f5f9;">
   <div class="container">
-    <h2 class="section-title">Insights & Articles</h2>
-    <p class="text-center mb-5">Learn the latest tips, strategies, and insights to grow your marketplace business.</p>
-    <div class="row g-4">
-
-      <!-- Blog 1 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <img src="https://images.unsplash.com/photo-1581091012184-35c3a8c6f27b?auto=format&fit=crop&w=800&q=80" alt="Optimizing Listings">
-          <h5>Maximizing Product Visibility</h5>
-          <p>Optimize titles, descriptions, and images to appear at the top of search results and increase clicks.</p>
-          <a href="blog.html#visibility" class="btn btn-primary btn-sm m-3">Read More</a>
-        </div>
-      </div>
-
-      <!-- Blog 2 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <img src="https://images.unsplash.com/photo-1605902711622-cfb43c443f36?auto=format&fit=crop&w=800&q=80" alt="PPC Strategy">
-          <h5>Effective PPC Campaigns</h5>
-          <p>Learn how to manage campaigns, select keywords, and optimize bidding for maximum ROI.</p>
-          <a href="blog.html#ppc-strategy" class="btn btn-primary btn-sm m-3">Read More</a>
-        </div>
-      </div>
-
-      <!-- Blog 3 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <img src="https://images.unsplash.com/photo-1581092335140-80a67b2e2c4f?auto=format&fit=crop&w=800&q=80" alt="Creative Content">
-          <h5>Engaging Product Content</h5>
-          <p>Create visuals, videos, and storytelling that attract customers and boost conversions.</p>
-          <a href="blog.html#creative-content" class="btn btn-primary btn-sm m-3">Read More</a>
-        </div>
-      </div>
-
-    </div>
-    <div class="text-center mt-5">
-      <a href="blog.html" class="btn btn-outline-primary btn-lg">View All Articles</a>
-    </div>
+    <h1>Premium Services for Marketplace Success</h1>
+    <p>We provide end-to-end e-commerce solutions, creative strategy, analytics, and web development to help brands scale faster and smarter.</p>
   </div>
 </section>
 
-<!-- FAQ Section -->
-<section class="container my-5">
-  <h2 class="section-title text-center
+<!-- Services Section -->
+<main class="py-5">
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <h4>E-commerce Management</h4>
+          <p>Complete account management including onboarding, catalog & listings, inventory, performance monitoring, and returns handling for marketplaces like Amazon, Flipkart, and Walmart.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <h4>Performance Marketing</h4>
+          <p>PPC campaigns, bid & keyword management, DSP and retargeting to maximize ROAS and drive consistent sales growth across multiple marketplaces.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <h4>Creative & Content</h4>
+          <p>Product photography, A+ content, video creatives, listing copywriting, and compelling brand storytelling to capture attention and boost conversions.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <h4>Web Development</h4>
+          <p>Shopify & WordPress storefronts, UX/UI design, responsive layout, conversion optimization, and analytics setup for a seamless user experience.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <h4>Analytics & Reporting</h4>
+          <p>Custom dashboards, marketplace reports, data-driven insights, and actionable recommendations to optimize performance and strategy.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <h4>Consulting & Strategy</h4>
+          <p>Expert consultation on marketplace growth, pricing, inventory, and marketing strategies to scale your brand efficiently and profitably.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Insights & Articles Section -->
+  <section class="py-5" style="background:#f1f5f9;">
+    <div class="container">
+      <h2 class="section-title">Insights & Articles</h2>
+      <p class="text-center mb-5">Learn practical tips, strategies, and insights to grow your online marketplace business effectively.</p>
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1581091012184-35c3a8c6f27b?auto=format&fit=crop&w=800&q=80" alt="Optimizing Listings">
+            <div class="p-3">
+              <h5>Optimizing Product Listings</h5>
+              <p>Learn how to craft titles, descriptions, and images that improve search ranking and attract more buyers.</p>
+              <a href="#" class="btn btn-primary btn-sm mt-2">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1605902711622-cfb43c443f36?auto=format&fit=crop&w=800&q=80" alt="PPC Strategy">
+            <div class="p-3">
+              <h5>Effective PPC Campaigns</h5>
+              <p>Discover actionable methods to manage paid campaigns, choose keywords, and optimize bids for higher ROI.</p>
+              <a href="#" class="btn btn-primary btn-sm mt-2">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1581092335140-80a67b2e2c4f?auto=format&fit=crop&w=800&q=80" alt="Creative Content">
+            <div class="p-3">
+              <h5>Creating Engaging Content</h5>
+              <p>Tips to produce videos, images, and storytelling content that capture attention and increase conversions.</p>
+              <a href="#" class="btn btn-primary btn-sm mt-2">Read More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="text-center mt-5">
+        <a href="#" class="btn btn-outline-primary btn-lg">View All Articles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Testimonials -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title">Client Success Stories</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="testimonial">
+            <p><strong>“Sales up 2.5X in 60 days”</strong><br>— A brand owner after strategic listing revamp & PPC automation.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial">
+            <p><strong>“120 SKUs launched seamlessly”</strong><br>— Seller scaled with zero downtime across marketplaces.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial">
+            <p><strong>“FBA migration simplified”</strong><br>— Smooth transition with optimized logistics & inventory setup.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats / Achievements -->
+  <section class="py-5" style="background:#f1f5f9;">
+    <div class="container">
+      <h2 class="section-title">Our Achievements</h2>
+      <div class="row g-4 text-center">
+        <div class="col-md-3">
+          <div class="stats-box">
+            <h3>500+</h3>
+            <p>Marketplace Accounts Managed</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="stats-box">
+            <h3>10K+</h3>
+            <p>Products Optimized</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="stats-box">
+            <h3>2.5X</h3>
+            <p>Average Sales Growth</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="stats-box">
+            <h3>1K+</h3>
+            <p>Happy Clients</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h5>What marketplaces do you support?</h5>
+        <p>We support major online marketplaces including Amazon, Flipkart, Walmart, and many emerging platforms.</p>
+      </div>
+      <div class="faq-item">
+        <h5>Do you manage PPC campaigns?</h5>
+        <p>Yes, we handle full PPC campaign management including keyword research, bid optimization, and retargeting strategies.</p>
+      </div>
+      <div class="faq-item">
+        <h5>Can you help with product photography and content?</h5>
+        <p>Absolutely. We provide professional product photography, videos, copywriting, and A+ content creation services.</p>
+      </div>
+      <div class="faq-item">
+        <h5>Do you provide analytics and reporting?</h5>
+        <p>Yes, we provide custom dashboards, reports, and actionable insights to monitor performance and improve ROI.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-5 text-center" style="background:#0ea5e9; color:#fff;">
+    <div class="container">
+      <h2>Ready to Scale Your Marketplace Business?</h2>
+      <p>Connect with our experts today and take your brand to the next level.</p>
+      <a href="enquiry.html" class="btn btn-light btn-lg mt-3">Get Started</a>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <h5>Easy Ecom Wealth</h5>
+        <p>4/A Shraddha Shri Colony, Indore, Madhya Pradesh<br>Phone: +91 95894 43595<br>Email: <a href="mailto:easyecomwealth@gmail.com">easyecomwealth@gmail.com</a></p>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="enquiry.html">Business Enquiry</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Follow Us</h5>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" style="margin-left:12px"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="#" style="margin-left:12px"><i class="fab fa-youtube fa-lg"></i></a>
+          <a href="#" style="margin-left:12px"><i class="fab fa-linkedin fa-lg"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr style="border-color:rgba(255,255,255,0.06)">
+    <p class="text-center mb-0">© 2025 Easy Ecom Wealth. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
