@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Our Partners - Easy Ecom Wealth</title>
-<meta name="description" content="Easy Ecom Wealth partners with global marketplaces and service providers for e-commerce growth.">
+<title>Partners - Easy Ecom Wealth</title>
+<meta name="description" content="Easy Ecom Wealth Partners - Grow your business through strategic marketplace and service collaborations.">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 <style>
@@ -14,43 +14,47 @@
   --bg:#f7f9fc;
   --nav:#0d1b2a;
 }
-
-body { font-family: 'Poppins', sans-serif; background:var(--bg); color:#172031; margin:0;}
-a { text-decoration:none; color:var(--primary);}
-a:hover { color: var(--accent);}
+body { font-family: 'Poppins', Arial, sans-serif; margin:0; background: var(--bg); color:#172031; }
+a { color: var(--primary); text-decoration: none; }
 .navbar { background: var(--nav) !important; }
-.navbar .nav-link { color:#fff !important; }
-.btn-primary { background: var(--primary); border:none; transition:0.3s;}
-.btn-primary:hover { background: var(--accent);}
-.hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1600&q=80') center/cover; color:#fff; padding:100px 20px; text-align:center; position:relative; overflow:hidden;}
-.hero h1 { font-size:3rem; animation: fadeInDown 1s ease forwards; }
-.hero p { font-size:1.2rem; animation: fadeInUp 1s 0.3s ease forwards;}
-@keyframes fadeInDown { from {opacity:0; transform:translateY(-20px);} to {opacity:1; transform:translateY(0);} }
-@keyframes fadeInUp { from {opacity:0; transform:translateY(20px);} to {opacity:1; transform:translateY(0);} }
+.navbar .nav-link { color: #fff !important; }
+.btn-primary { background: var(--primary); border:none; transition: 0.3s; }
+.btn-primary:hover { background: var(--accent); }
+.section-title { text-align:center; font-size:2rem; font-weight:700; color: var(--primary); margin-bottom: 40px; position: relative; }
+.section-title::after { content:''; display:block; width:60px; height:4px; background-color: var(--accent); margin:10px auto 0 auto; border-radius:2px; }
+.hero {
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1600&q=80') center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+}
+.hero h1 { font-size:3rem; font-weight:700; }
+.hero p { font-size:1.2rem; margin-top:15px; }
 
-.partner-section { padding:80px 20px; }
-.partner-box { background:#fff; border-radius:15px; padding:30px; text-align:center; box-shadow:0 8px 25px rgba(0,0,0,0.1); transition:0.3s; }
-.partner-box:hover { transform:translateY(-10px); box-shadow:0 20px 40px rgba(0,0,0,0.15);}
-.partner-box img { max-height:60px; margin-bottom:15px; filter: grayscale(10%); transition: transform 0.3s, filter 0.3s; }
-.partner-box:hover img { transform:scale(1.1); filter:none; }
+/* Animations */
+.fade-in { opacity:0; transform: translateY(20px); animation: fadeInUp 1s forwards; }
+@keyframes fadeInUp { to { opacity:1; transform: translateY(0); } }
+.benefit-box { background:#fff; border-radius:12px; padding:30px; margin-bottom:20px; text-align:center; box-shadow:0 6px 20px rgba(0,0,0,0.1); transition: transform 0.3s; }
+.benefit-box:hover { transform: translateY(-10px); }
 
-.section-title { text-align:center; font-size:2rem; font-weight:700; color: var(--primary); margin-bottom:40px; position:relative; }
-.section-title::after { content:''; display:block; width:60px; height:4px; background:var(--accent); margin:10px auto 0 auto; border-radius:2px;}
+/* Stats Section */
+.stats { background:#e9f2ff; padding:60px 20px; text-align:center; }
+.stats .stat-box { display:inline-block; margin:20px; }
+.stats .stat-box h3 { font-size:2.5rem; color: var(--primary); }
+.stats .stat-box p { font-size:1rem; color:#333; }
 
-.testimonial-box, .benefit-box, .stat-box, .faq-box { background:#fff; padding:30px; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,0.05); margin-bottom:20px; transition:0.3s;}
-.testimonial-box:hover, .benefit-box:hover, .stat-box:hover, .faq-box:hover { transform:translateY(-8px); box-shadow:0 20px 40px rgba(0,0,0,0.1);}
-.testimonial-box p, .faq-box p { color:#555;}
-.stat-box h2 { font-size:2.5rem; color:var(--accent); margin-bottom:10px; }
-.floating-shape { position:absolute; width:80px; height:80px; border-radius:50%; background: rgba(255,255,255,0.15); animation: floatUpDown 6s ease-in-out infinite;}
-.floating-shape:nth-child(1){ top:20%; left:10%; animation-delay:0s;}
-.floating-shape:nth-child(2){ top:60%; left:25%; animation-delay:2s;}
-.floating-shape:nth-child(3){ top:40%; left:75%; animation-delay:4s;}
-@keyframes floatUpDown { 0%,100%{transform:translateY(0);}50%{transform:translateY(-30px);} }
+/* Testimonial Section */
+.testimonial { background:#fff; padding:30px; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.1); margin-bottom:30px; text-align:center; }
 
-footer { background: var(--nav); color:#ddd; padding:50px 0;}
+/* CTA */
+.cta { background: var(--primary); color:#fff; padding:60px 20px; text-align:center; border-radius:12px; margin:50px 0; }
+.cta a { color:#fff; font-weight:700; }
+
+/* Footer */
+footer { background: var(--nav); color:#ddd; padding:40px 0; }
 .footer-links a { color:#ddd; text-decoration:none; }
-.footer-links a:hover { color: var(--accent);}
-.social-icons a { color:#ddd; margin-right:15px; transition:0.3s;}
+.social-icons a { color:#ddd; margin-right:15px; transition:color 0.3s; }
 .social-icons a:hover { color: var(--accent); }
 
 </style>
@@ -59,203 +63,199 @@ footer { background: var(--nav); color:#ddd; padding:50px 0;}
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg sticky-top">
-<div class="container">
-<a class="navbar-brand d-flex align-items-center" href="index.html">
-<img src="assets/logo.png" alt="Easy Ecom Wealth" style="height:42px;margin-right:10px">
-<span class="text-white fw-bold">EASY ECOM WEALTH</span>
-</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navmenu">
-<ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-<li class="nav-item"><a class="nav-link active" href="partners.html">Partners</a></li>
-<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-<li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
-<li class="nav-item"><a class="nav-link" href="enquiry.html">Business Enquiry</a></li>
-<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-</ul>
-</div>
-</div>
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="assets/logo.png" alt="Easy Ecom Wealth" style="height:42px;margin-right:10px">
+      <span class="text-white fw-bold">EASY ECOM WEALTH</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link active" href="partners.html">Partners</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+        <li class="nav-item"><a class="nav-link" href="enquiry.html">Business Enquiry</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
+<main>
 <!-- Hero -->
-<section class="hero">
-  <div class="floating-shape"></div>
-  <div class="floating-shape"></div>
-  <div class="floating-shape"></div>
+<section class="hero fade-in">
   <div class="container">
-    <h1 class="display-5 fw-bold">Our Marketplace & Service Partners</h1>
-    <p class="lead">We collaborate with leading platforms and service providers worldwide to help brands scale seamlessly.</p>
+    <h1>Empowering Businesses Through Strategic Partnerships</h1>
+    <p>We connect marketplaces, service providers, and agencies to enable global growth and maximize revenue potential.</p>
   </div>
 </section>
 
-<!-- Partner Grid -->
-<section class="partner-section container">
-<div class="row g-4 justify-content-center">
-  <!-- Placeholder Partner Cards -->
-  <div class="col-6 col-md-3">
-    <div class="partner-box">
-      <img src="https://via.placeholder.com/120x60.png?text=Marketplace+1" alt="Partner 1">
-      <h6>Global Marketplace 1</h6>
-      <p>Seamless integration and growth support for brands expanding online.</p>
-    </div>
-  </div>
-  <div class="col-6 col-md-3">
-    <div class="partner-box">
-      <img src="https://via.placeholder.com/120x60.png?text=Marketplace+2" alt="Partner 2">
-      <h6>Global Marketplace 2</h6>
-      <p>Optimized storefront setup and compliance guidance.</p>
-    </div>
-  </div>
-  <div class="col-6 col-md-3">
-    <div class="partner-box">
-      <img src="https://via.placeholder.com/120x60.png?text=Service+Provider+1" alt="Service 1">
-      <h6>Service Provider 1</h6>
-      <p>Marketing, logistics, and growth support for online brands.</p>
-    </div>
-  </div>
-  <div class="col-6 col-md-3">
-    <div class="partner-box">
-      <img src="https://via.placeholder.com/120x60.png?text=Service+Provider+2" alt="Service 2">
-      <h6>Service Provider 2</h6>
-      <p>Advanced analytics and campaign optimization solutions.</p>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- Benefits of Partnership -->
+<!-- Benefits -->
 <section class="container my-5">
-<h2 class="section-title text-center">Benefits of Partnering With Us</h2>
-<div class="row g-4 mt-4">
-  <div class="col-md-3">
-    <div class="benefit-box">
-      <i class="fas fa-chart-line fa-2x mb-2"></i>
-      <h6>Revenue Growth</h6>
-      <p>Accelerate sales through optimized marketplace strategies.</p>
+  <h2 class="section-title">Why Partner With Us?</h2>
+  <div class="row g-4">
+    <div class="col-md-4 fade-in">
+      <div class="benefit-box">
+        <i class="fas fa-handshake fa-2x mb-3" style="color:var(--primary);"></i>
+        <h5>Mutual Growth</h5>
+        <p>We design partnerships that benefit both parties, fostering long-term business growth and stability.</p>
+      </div>
+    </div>
+    <div class="col-md-4 fade-in">
+      <div class="benefit-box">
+        <i class="fas fa-globe fa-2x mb-3" style="color:var(--primary);"></i>
+        <h5>Global Exposure</h5>
+        <p>Gain access to international marketplaces and a broader customer base without heavy operational overhead.</p>
+      </div>
+    </div>
+    <div class="col-md-4 fade-in">
+      <div class="benefit-box">
+        <i class="fas fa-lightbulb fa-2x mb-3" style="color:var(--primary);"></i>
+        <h5>Innovation & Expertise</h5>
+        <p>Leverage our deep marketplace knowledge, analytics, and marketing strategies for faster, smarter growth.</p>
+      </div>
     </div>
   </div>
-  <div class="col-md-3">
-    <div class="benefit-box">
-      <i class="fas fa-handshake fa-2x mb-2"></i>
-      <h6>Collaborative Network</h6>
-      <p>Connect with top e-commerce platforms and service providers.</p>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="benefit-box">
-      <i class="fas fa-clock fa-2x mb-2"></i>
-      <h6>Time Efficiency</h6>
-      <p>Streamlined onboarding and setup saves operational time.</p>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="benefit-box">
-      <i class="fas fa-globe fa-2x mb-2"></i>
-      <h6>Global Reach</h6>
-      <p>Expand to new international marketplaces and audiences.</p>
-    </div>
-  </div>
-</div>
 </section>
 
-<!-- Statistics Section -->
-<section class="container my-5 bg-light rounded-4 p-5">
-<h2 class="section-title text-center">Our Partnership Impact</h2>
-<div class="row g-4 mt-4 text-center">
-  <div class="col-md-3">
+<!-- Statistics -->
+<section class="stats">
+  <div class="container">
+    <h2 class="section-title">Our Impact</h2>
     <div class="stat-box">
-      <i class="fas fa-users fa-2x mb-2"></i>
-      <h2>300+</h2>
-      <p>Active Partners</p>
+      <h3>+500</h3>
+      <p>Brands Served Worldwide</p>
+    </div>
+    <div class="stat-box">
+      <h3>+1200</h3>
+      <p>Successful Marketplace Launches</p>
+    </div>
+    <div class="stat-box">
+      <h3>+150k</h3>
+      <p>Products Optimized for Global Markets</p>
+    </div>
+    <div class="stat-box">
+      <h3>98%</h3>
+      <p>Partner Satisfaction Rate</p>
     </div>
   </div>
-  <div class="col-md-3">
-    <div class="stat-box">
-      <i class="fas fa-rocket fa-2x mb-2"></i>
-      <h2>500%</h2>
-      <p>Average Brand Growth</p>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="stat-box">
-      <i class="fas fa-globe fa-2x mb-2"></i>
-      <h2>20+</h2>
-      <p>Marketplaces Supported</p>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="stat-box">
-      <i class="fas fa-award fa-2x mb-2"></i>
-      <h2>100+</h2>
-      <p>Successful Collaborations</p>
-    </div>
-  </div>
-</div>
 </section>
 
-<!-- Testimonials Section -->
+<!-- Partnership Workflow -->
 <section class="container my-5">
-<h2 class="section-title text-center">Partner Success Stories</h2>
-<div class="row g-4 mt-4">
-  <div class="col-md-4">
-    <div class="testimonial-box">
-      <p><strong>"Our online sales grew 3X in 90 days thanks to strategic partnership."</strong><br>— Partner Company A</p>
+  <h2 class="section-title">Our Partnership Workflow</h2>
+  <div class="row g-4">
+    <div class="col-md-3 fade-in">
+      <div class="benefit-box">
+        <i class="fas fa-search fa-2x mb-3" style="color:var(--primary);"></i>
+        <h6>1. Assessment</h6>
+        <p>We evaluate your business needs, market potential, and opportunities for collaboration.</p>
+      </div>
+    </div>
+    <div class="col-md-3 fade-in">
+      <div class="benefit-box">
+        <i class="fas fa-handshake fa-2x mb-3" style="color:var(--primary);"></i>
+        <h6>2. Agreement</h6>
+        <p>Define partnership terms, mutual objectives, and KPIs to ensure transparent collaboration.</p>
+      </div>
+    </div>
+    <div class="col-md-3 fade-in">
+      <div class="benefit-box">
+        <i class="fas fa-cogs fa-2x mb-3" style="color:var(--primary);"></i>
+        <h6>3. Integration</h6>
+        <p>Seamless onboarding into our systems and processes for marketplace and service alignment.</p>
+      </div>
+    </div>
+    <div class="col-md-3 fade-in">
+      <div class="benefit-box">
+        <i class="fas fa-chart-line fa-2x mb-3" style="color:var(--primary);"></i>
+        <h6>4. Growth</h6>
+        <p>Continuous optimization, monitoring, and joint campaigns to maximize mutual revenue.</p>
+      </div>
     </div>
   </div>
-  <div class="col-md-4">
-    <div class="testimonial-box">
-      <p><strong>"Seamless marketplace integration made expansion effortless."</strong><br>— Partner Company B</p>
+</section>
+
+<!-- Testimonials -->
+<section class="container my-5">
+  <h2 class="section-title">Partner Testimonials</h2>
+  <div class="row g-4">
+    <div class="col-md-4 fade-in">
+      <div class="testimonial">
+        <p><strong>"Working with Easy Ecom Wealth opened new markets we never reached before."</strong></p>
+        <p>- Strategic Partner</p>
+      </div>
+    </div>
+    <div class="col-md-4 fade-in">
+      <div class="testimonial">
+        <p><strong>"The partnership process was smooth, transparent, and highly beneficial for both teams."</strong></p>
+        <p>- Marketplace Collaborator</p>
+      </div>
+    </div>
+    <div class="col-md-4 fade-in">
+      <div class="testimonial">
+        <p><strong>"Our products gained international exposure with their expert guidance and strategy."</strong></p>
+        <p>- Brand Owner</p>
+      </div>
     </div>
   </div>
-  <div class="col-md-4">
-    <div class="testimonial-box">
-      <p><strong>"Collaborating with Easy Ecom Wealth unlocked global reach for our brand."</strong><br>— Partner Company C</p>
-    </div>
-  </div>
-</div>
 </section>
 
 <!-- CTA -->
-<section class="container text-center my-5">
-<h2 class="section-title">Become Our Partner</h2>
-<p class="lead mb-4">We welcome collaborations with marketplaces, agencies, and service providers to create mutual growth opportunities.</p>
-<a href="enquiry.html" class="btn btn-primary btn-lg">Partner With Us</a>
+<section class="cta">
+  <h2>Interested in Partnering With Us?</h2>
+  <p>Connect with our team to explore opportunities for collaboration and mutual growth.</p>
+  <a href="enquiry.html" class="btn btn-lg btn-light mt-3">Become a Partner</a>
 </section>
 
 <!-- FAQs -->
 <section class="container my-5">
-<h2 class="section-title text-center">Frequently Asked Questions</h2>
-<div class="row g-4 mt-4">
-  <div class="col-md-6">
-    <div class="faq-box">
-      <h6>Who can partner with Easy Ecom Wealth?</h6>
-      <p>We collaborate with marketplaces, e-commerce platforms, logistics providers, and marketing agencies.</p>
+  <h2 class="section-title">Frequently Asked Questions</h2>
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+          What types of partnerships do you offer?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          We offer strategic partnerships for marketplaces, agencies, and service providers to enable global growth and mutual revenue.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+          How do I become a partner?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Submit your enquiry through our partnership form. Our team will review your proposal and schedule a discussion.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+          Are there any fees to partner with you?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Our partnership agreements are mutually beneficial, and fees depend on the type and scope of collaboration. Transparent terms are always shared upfront.
+        </div>
+      </div>
     </div>
   </div>
-  <div class="col-md-6">
-    <div class="faq-box">
-      <h6>How do I apply to become a partner?</h6>
-      <p>Click on the “Partner With Us” button and fill out the enquiry form. Our team will contact you shortly.</p>
-    </div>
-  </div>
-  <div class="col-md-6">
-    <div class="faq-box">
-      <h6>What are the benefits of partnership?</h6>
-      <p>Access to client networks, marketplace expertise, marketing support, and co-branded campaigns.</p>
-    </div>
-  </div>
-  <div class="col-md-6">
-    <div class="faq-box">
-      <h6>Is there a fee to partner?</h6>
-      <p>Partnership agreements are tailored; some collaborations may involve a service fee depending on the scope.</p>
-    </div>
-  </div>
-</div>
 </section>
+
+</main>
 
 <!-- Footer -->
 <footer>
@@ -268,10 +268,10 @@ footer { background: var(--nav); color:#ddd; padding:50px 0;}
       <div class="col-md-4 mb-3">
         <h5>Quick Links</h5>
         <ul class="list-unstyled footer-links">
-          <li><a href="services.html" class="text-light">Services</a></li>
-          <li><a href="partners.html" class="text-light">Partners</a></li>
-          <li><a href="about.html" class="text-light">About</a></li>
-          <li><a href="enquiry.html" class="text-light">Business Enquiry</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="enquiry.html">Business Enquiry</a></li>
         </ul>
       </div>
       <div class="col-md-4">
@@ -280,15 +280,4 @@ footer { background: var(--nav); color:#ddd; padding:50px 0;}
           <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
           <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
           <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
-          <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
-        </div>
-      </div>
-    </div>
-    <hr style="border-color:rgba(255,255,255,0.2)">
-    <p class="text-center mb-0">© 2025 Easy Ecom Wealth. All Rights Reserved.</p>
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+          <a href="#"><
