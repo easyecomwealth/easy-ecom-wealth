@@ -28,16 +28,28 @@ a { color: var(--primary); text-decoration: none; }
 
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-  height: 85vh;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), 
+              url('https://images.unsplash.com/photo-1605902711622-cfb43c44367f?auto=format&fit=crop&w=1600&q=80') 
+              center/cover no-repeat;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: #fff;
 }
-.hero-section h1 { font-size:3rem; font-weight:700; animation: fadeInDown 1s ease forwards; }
-.hero-section p { font-size:1.25rem; animation: fadeInUp 1s 0.3s ease forwards; opacity:0; }
+.hero-section h1 {
+  font-size:3.2rem;
+  font-weight:700;
+  opacity:0;
+  animation: fadeInDown 1s ease forwards;
+}
+.hero-section p {
+  font-size:1.3rem;
+  margin-top:15px;
+  opacity:0;
+  animation: fadeInUp 1s 0.3s ease forwards;
+}
 @keyframes fadeInDown { from {opacity:0; transform:translateY(-20px);} to {opacity:1; transform:translateY(0);} }
 @keyframes fadeInUp { from {opacity:0; transform:translateY(20px);} to {opacity:1; transform:translateY(0);} }
 
@@ -135,11 +147,11 @@ footer {
 <!-- Hero Section -->
 <section class="hero-section">
   <div class="hero-overlay">
-    <h1 class="display-5 fw-bold">Scale Your Business with Easy Ecom Wealth</h1>
-    <p class="lead">End-to-end marketplace onboarding, ads management, and growth strategies for Amazon, Flipkart & Walmart.</p>
+    <h1 class="display-5 fw-bold">Power Your Brand with Easy Ecom Wealth</h1>
+    <p class="lead">Smart marketplace onboarding, ad management & global growth strategies built for scale.</p>
     <div class="mt-4">
-      <a href="services.html" class="btn btn-primary btn-lg me-2">Our Services</a>
-      <a href="enquiry.html" class="btn btn-outline-light btn-lg">Business Enquiry</a>
+      <a href="services.html" class="btn btn-primary btn-lg me-2">Explore Services</a>
+      <a href="enquiry.html" class="btn btn-outline-light btn-lg">Get Started</a>
     </div>
   </div>
 </section>
@@ -147,29 +159,29 @@ footer {
 <!-- Services -->
 <section class="container-sm my-5">
   <div class="text-center">
-    <h2 class="section-title">What We Do</h2>
-    <p class="mb-4">We provide a complete ecosystem of e-commerce growth services — from listing and advertising to brand building and global expansion.</p>
+    <h2 class="section-title">Our Expertise</h2>
+    <p class="mb-4">From account setup to international expansion — we are your growth partner across every stage of e-commerce.</p>
   </div>
   <div class="row g-4">
     <div class="col-md-4">
       <div class="service-box">
         <i class="fas fa-store"></i>
         <h5>Marketplace Onboarding</h5>
-        <p>Account setup, catalog creation, GTIN exemption support and marketplace compliance.</p>
+        <p>Seamless account setup, catalog creation & compliance for Amazon, Flipkart, Walmart & beyond.</p>
       </div>
     </div>
     <div class="col-md-4">
       <div class="service-box">
         <i class="fas fa-search"></i>
         <h5>Listing Optimization</h5>
-        <p>Enhanced titles, bullets, A+ content, image guidance and keyword research to improve conversion.</p>
+        <p>Data-driven keyword research, A+ content & creative enhancements to maximize conversions.</p>
       </div>
     </div>
     <div class="col-md-4">
       <div class="service-box">
         <i class="fas fa-bullseye"></i>
         <h5>PPC & Ads Management</h5>
-        <p>Sponsored search, sponsored display, DSP and bid optimization to lower ACoS and boost sales.</p>
+        <p>AI-powered bidding strategies, DSP, and campaign management to drive ROI & reduce ACoS.</p>
       </div>
     </div>
   </div>
@@ -177,40 +189,18 @@ footer {
 
 <!-- Testimonials -->
 <section class="container-sm my-5">
-  <h3 class="section-title text-center">Client Results & Testimonials</h3>
+  <h3 class="section-title text-center">Client Success Stories</h3>
   <div class="row g-4">
     <div class="col-md-4">
       <div class="testimonial">
-        <p><strong>“Sales up 2.5X in 60 days”</strong><br>— Brand owner after a listing refresh & PPC restructure.</p>
+        <p><strong>“Sales up 2.5X in 60 days”</strong><br>— A brand owner after strategic listing revamp & PPC automation.</p>
       </div>
     </div>
     <div class="col-md-4">
       <div class="testimonial">
-        <p><strong>“Seamless marketplace expansion”</strong><br>— Seller who launched 120 SKUs with zero downtime.</p>
+        <p><strong>“120 SKUs launched seamlessly”</strong><br>— Seller scaled with zero downtime across marketplaces.</p>
       </div>
     </div>
     <div class="col-md-4">
       <div class="testimonial">
-        <p><strong>“FBA onboarding made simple”</strong><br>— Seller moved inventory smoothly to FBA.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<!-- Footer -->
-<footer>
-  <div class="container container-sm">
-    <div class="row">
-      <div class="col-md-4 mb-3">
-        <h5>Easy Ecom Wealth</h5>
-        <p>4/A Shraddha Shri Colony, Indore, Madhya Pradesh<br>Phone: +91 95894 43595<br>Email: <a href="mailto:easyecomwealth@gmail.com">easyecomwealth@gmail.com</a></p>
-      </div>
-      <div class="col-md-4 mb-3">
-        <h5>Quick Links</h5>
-        <ul class="list-unstyled footer-links">
-          <li><a href="services.html">Services</a></li>
-          <li><a href="partners.html">Partners</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="enquiry.html">Business Enquiry</a></li
+        <p><strong>“FBA migration simplified”
