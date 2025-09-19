@@ -1,7 +1,22 @@
-.logo {
+.navbar-brand-logo {
   display: inline-block;
   width: 200px;
   height: 60px;
-  background: url("assets/logo.svg") no-repeat center;
+  background: url("data:image/svg+xml;utf8,
+  <svg xmlns='http://www.w3.org/2000/svg' width='200' height='60' viewBox='0 0 200 60'>
+    <defs>
+      <linearGradient id='gradBlueTeal' x1='0%' y1='0%' x2='100%' y2='0%'>
+        <stop offset='0%' stop-color='%230ea5e9'/>
+        <stop offset='100%' stop-color='%2314b8a6'/>
+      </linearGradient>
+    </defs>
+    <rect width='200' height='60' rx='12' fill='url(%23gradBlueTeal)'/>
+    <text x='20' y='30' font-family='Segoe UI, Tahoma, Geneva, Verdana, sans-serif' 
+          font-size='20' font-weight='700' fill='%23ffffff'>EASY ECOM</text>
+    <text x='20' y='48' font-family='Segoe UI, Tahoma, Geneva, Verdana, sans-serif' 
+          font-size='12' font-weight='400' fill='%23ffffff'>WEALTH</text>
+    <circle cx='170' cy='30' r='12' fill='%23ffffff' opacity='0.25'/>
+    <path d='M165 24 L177 30 L165 36 Z' fill='%23ffffff'/>
+  </svg>") no-repeat center;
   background-size: contain;
 }
