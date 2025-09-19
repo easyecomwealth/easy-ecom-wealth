@@ -7,15 +7,32 @@
 <meta name="description" content="Privacy policy, terms of service and refund policy.">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-<link href="assets/css/style.css" rel="stylesheet">
+<style>
+  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color:#f9f9f9; color:#172031; }
+  a { text-decoration:none; color:#0ea5e9; }
+  a:hover { text-decoration:underline; }
+  .navbar { background-color:#111827 !important; }
+  .navbar .nav-link { color:#fff !important; transition:0.3s; }
+  .navbar .nav-link:hover { color:#0ea5e9 !important; }
+  .section-title { font-size:2rem; font-weight:700; text-align:center; margin-bottom:40px; position:relative; }
+  .section-title::after { content:''; display:block; width:60px; height:4px; background-color:#0ea5e9; margin:10px auto 0 auto; border-radius:2px; }
+  main h4 { font-weight:600; margin-top:25px; color:#111827; }
+  main p { line-height:1.7; color:#4b5563; font-size:0.95rem; }
+  footer { background-color:#111827; color:#d1d5db; padding:50px 0 20px 0; }
+  footer a { color:#d1d5db; }
+  footer a:hover { color:#0ea5e9; }
+  .social-icons i { font-size:1.25rem; transition:color 0.3s; }
+  .social-icons i:hover { color:#0ea5e9; }
+</style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg sticky-top">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark">
   <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="/easy_ecom_site/index.html">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
       <img src="assets/logo.png" alt="Easy Ecom Wealth" style="height:42px;margin-right:10px">
-      <span class="text-white fw-bold">EASY ECOM WEALTH</span>
+      <span class="fw-bold text-white">EASY ECOM WEALTH</span>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
       <span class="navbar-toggler-icon"></span>
@@ -34,22 +51,25 @@
   </div>
 </nav>
 
+<!-- Main Content -->
 <main class="py-5">
+  <div class="container-sm">
+    <h1 class="section-title">Our Policies</h1>
 
-<div class="container-sm">
-  <h1 class="section-title">Policies</h1>
-  <h4>Privacy Policy</h4>
-  <p>We respect your privacy. This page will include details about data handling and cookies.</p>
-  <h4>Terms of Service</h4>
-  <p>Service terms, scope of work, and billing details will be available here.</p>
-  <h4>Refund Policy</h4>
-  <p>Refunds or cancellations for services are handled according to agreed terms.</p>
-</div>
+    <h4>Privacy Policy</h4>
+    <p>We respect your privacy. We collect and handle personal data responsibly to provide our services. Information may include contact details, usage data, and preferences. We ensure your data is protected and only used for service improvement. Cookies and tracking are used to enhance website experience.</p>
 
+    <h4>Terms of Service</h4>
+    <p>Our terms define the scope of services, responsibilities, and accountabilities. By using our services, you agree to comply with our guidelines, pay applicable fees, and adhere to operational requirements. Terms also cover intellectual property, service limitations, and dispute resolution.</p>
+
+    <h4>Refund Policy</h4>
+    <p>Refunds or cancellations for services are handled according to the agreed terms at the time of purchase. Requests must be submitted in writing within the stipulated period. Refund eligibility and process details are provided on service-specific agreements.</p>
+  </div>
 </main>
 
+<!-- Footer -->
 <footer>
-  <div class="container container-sm">
+  <div class="container">
     <div class="row">
       <div class="col-md-4 mb-3">
         <h5>Easy Ecom Wealth</h5>
@@ -75,7 +95,7 @@
       </div>
     </div>
     <hr style="border-color:rgba(255,255,255,0.06)">
-    <p class="text-center" style="margin:0">© 2025 Easy Ecom Wealth. All Rights Reserved.</p>
+    <p class="text-center mb-0">© 2025 Easy Ecom Wealth. All Rights Reserved.</p>
   </div>
 </footer>
 
