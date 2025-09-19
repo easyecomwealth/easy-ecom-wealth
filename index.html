@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Easy Ecom Wealth - Marketplace Growth & Services</title>
-<meta name="description" content="Easy Ecom Wealth - Amazon, Flipkart, Walmart marketplace onboarding, PPC management and e-commerce growth services.">
+<meta name="description" content="Easy Ecom Wealth - E-commerce growth solutions, marketplace onboarding, PPC management, and brand scaling.">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 <style>
@@ -14,104 +14,41 @@
   --bg:#f7f9fc;
   --nav:#0d1b2a;
 }
-body { font-family: 'Poppins', Arial, sans-serif; margin:0; background: var(--bg); color:#172031; }
-a { color: var(--primary); text-decoration: none; }
+body { font-family: 'Poppins', sans-serif; background: var(--bg); color:#172031; margin:0; }
+a { color: var(--primary); text-decoration:none; transition:0.3s;}
+a:hover { color: var(--accent); }
 .navbar { background: var(--nav) !important; }
-.navbar .nav-link { color: #fff !important; }
-.btn-primary { background: var(--primary); border:none; transition: 0.3s; }
+.navbar .nav-link { color:#fff !important; }
+.btn-primary { background: var(--primary); border:none; transition:0.3s; }
 .btn-primary:hover { background: var(--accent); }
-
-/* Hero Section */
-.hero-section {
-  position: relative;
-  height: 90vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  overflow:hidden;
-  color:#fff;
-  text-align:center;
-  background: linear-gradient(135deg, #0056b3 0%, #00aaff 100%);
-}
-.hero-overlay {
-  position: relative;
-  z-index:2;
-}
-.hero-section h1 {
-  font-size:3rem;
-  font-weight:700;
-  margin-bottom:15px;
-  opacity:0;
-  animation: fadeInDown 1s ease forwards;
-}
-.hero-section p {
-  font-size:1.3rem;
-  opacity:0;
-  animation: fadeInUp 1s 0.3s ease forwards;
-}
+.hero-section { position:relative; height:90vh; display:flex; align-items:center; justify-content:center; text-align:center; overflow:hidden; background:linear-gradient(135deg,#0056b3,#00aaff);}
+.hero-section h1 { font-size:3rem; font-weight:700; animation: fadeInDown 1s ease forwards; }
+.hero-section p { font-size:1.3rem; animation: fadeInUp 1s 0.3s ease forwards; }
 @keyframes fadeInDown { from {opacity:0; transform:translateY(-20px);} to {opacity:1; transform:translateY(0);} }
 @keyframes fadeInUp { from {opacity:0; transform:translateY(20px);} to {opacity:1; transform:translateY(0);} }
-
-/* Floating Animated Shapes */
-.floating-shape {
-  position:absolute;
-  width:80px;
-  height:80px;
-  border-radius:50%;
-  background: rgba(255,255,255,0.15);
-  animation: floatUpDown 6s ease-in-out infinite;
-}
-.floating-shape:nth-child(1) { top:20%; left:10%; animation-delay:0s; }
-.floating-shape:nth-child(2) { top:60%; left:25%; animation-delay:2s; }
-.floating-shape:nth-child(3) { top:40%; left:75%; animation-delay:4s; }
-@keyframes floatUpDown { 0%,100% { transform: translateY(0px);} 50% { transform: translateY(-30px);} }
-
-/* Section Title */
-.section-title {
-  text-align:center;
-  font-size:2rem;
-  font-weight:700;
-  color: var(--primary);
-  margin-bottom: 40px;
-  position: relative;
-}
-.section-title::after {
-  content:'';
-  display:block;
-  width:60px;
-  height:4px;
-  background-color: var(--accent);
-  margin:10px auto 0 auto;
-  border-radius:2px;
-}
-
-/* Service Boxes */
-.service-box {
-  background: #fff;
-  padding:30px 25px;
-  border-radius:12px;
-  box-shadow:0 10px 30px rgba(13,27,42,0.06);
-  transition: transform 0.3s, box-shadow 0.3s;
-  text-align:center;
-  cursor:pointer;
-}
-.service-box:hover { transform: translateY(-10px); box-shadow:0 20px 40px rgba(13,27,42,0.1);}
-.service-box i { font-size:3rem; color: var(--primary); margin-bottom: 20px; transition: all 0.4s ease;}
-.service-box:hover i { color: var(--accent); transform: rotate(15deg) scale(1.2); }
-
-/* Testimonials */
-.testimonial { background:#fff; padding:20px; border-radius:8px; box-shadow:0 6px 18px rgba(13,27,42,0.06); text-align:center; }
-
-/* Footer */
-footer { background: var(--nav); color:#ddd; padding:40px 0; }
+.floating-shape { position:absolute; width:80px; height:80px; border-radius:50%; background: rgba(255,255,255,0.15); animation: floatUpDown 6s ease-in-out infinite; }
+.floating-shape:nth-child(1){top:20%; left:10%; animation-delay:0s;}
+.floating-shape:nth-child(2){top:60%; left:25%; animation-delay:2s;}
+.floating-shape:nth-child(3){top:40%; left:75%; animation-delay:4s;}
+@keyframes floatUpDown { 0%,100%{transform:translateY(0);}50%{transform:translateY(-30px);} }
+.section-title { text-align:center; font-size:2rem; font-weight:700; color: var(--primary); margin-bottom: 40px; position: relative; }
+.section-title::after { content:''; display:block; width:60px; height:4px; background-color: var(--accent); margin:10px auto 0 auto; border-radius:2px; }
+.service-box, .feature-box, .testimonial-box, .stat-box, .process-box { background:#fff; padding:30px; border-radius:12px; box-shadow:0 10px 30px rgba(13,27,42,0.06); transition:0.3s; text-align:center;}
+.service-box:hover, .feature-box:hover, .testimonial-box:hover, .stat-box:hover, .process-box:hover { transform:translateY(-10px); box-shadow:0 20px 40px rgba(13,27,42,0.1);}
+.service-box i, .feature-box i, .testimonial-box i, .stat-box i, .process-box i { font-size:3rem; color:var(--primary); margin-bottom:20px; transition:0.4s;}
+.service-box:hover i, .feature-box:hover i { color: var(--accent); transform: rotate(15deg) scale(1.2);}
+.testimonial-box p { font-style:italic; color:#555;}
+.stat-box h2 { font-size:2.5rem; color: var(--accent); margin-bottom:10px;}
+footer { background:var(--nav); color:#ddd; padding:50px 0;}
 .footer-links a { color:#ddd; text-decoration:none; }
-.social-icons a { color:#ddd; margin-right:15px; transition:color 0.3s; }
+.footer-links a:hover { color: var(--accent); }
+.social-icons a { color:#ddd; margin-right:15px; transition:0.3s; }
 .social-icons a:hover { color: var(--accent); }
-
 </style>
 </head>
 <body>
 
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg sticky-top">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -137,79 +74,187 @@ footer { background: var(--nav); color:#ddd; padding:40px 0; }
 
 <main>
 
-<!-- Hero Section -->
+<!-- Hero -->
 <section class="hero-section">
   <div class="floating-shape"></div>
   <div class="floating-shape"></div>
   <div class="floating-shape"></div>
   <div class="hero-overlay">
-    <h1 class="display-5 fw-bold">Power Your Brand with Easy Ecom Wealth</h1>
-    <p class="lead">Smart marketplace onboarding, ad management & global growth strategies built for scale.</p>
+    <h1 class="display-5 fw-bold">Empowering Your Brand Growth Online</h1>
+    <p class="lead">Marketplace onboarding, listing optimization, ad campaigns, and strategic growth solutions for scalable e-commerce success.</p>
     <div class="mt-4">
-      <a href="services.html" class="btn btn-primary btn-lg me-2">Explore Services</a>
+      <a href="services.html" class="btn btn-primary btn-lg me-2">Our Services</a>
       <a href="enquiry.html" class="btn btn-outline-light btn-lg">Get Started</a>
     </div>
   </div>
 </section>
 
-<!-- Services -->
-<section class="container-sm my-5">
+<!-- Services Section -->
+<section class="container my-5">
   <div class="text-center">
     <h2 class="section-title">Our Expertise</h2>
-    <p class="mb-4">From account setup to international expansion — we are your growth partner across every stage of e-commerce.</p>
+    <p class="mb-4">Comprehensive solutions to grow, manage, and optimize your online presence across all major marketplaces.</p>
   </div>
   <div class="row g-4">
     <div class="col-md-4">
       <div class="service-box">
         <i class="fas fa-store"></i>
         <h5>Marketplace Onboarding</h5>
-        <p>Seamless account setup, catalog creation & compliance for Amazon, Flipkart, Walmart & beyond.</p>
+        <p>Complete setup, catalog management, and compliance across Amazon, Flipkart, Walmart, and more.</p>
       </div>
     </div>
     <div class="col-md-4">
       <div class="service-box">
         <i class="fas fa-search"></i>
         <h5>Listing Optimization</h5>
-        <p>Data-driven keyword research, A+ content & creative enhancements to maximize conversions.</p>
+        <p>SEO-driven content, creative visuals, and high-converting product pages to maximize sales.</p>
       </div>
     </div>
     <div class="col-md-4">
       <div class="service-box">
         <i class="fas fa-bullseye"></i>
         <h5>PPC & Ads Management</h5>
-        <p>AI-powered bidding strategies, DSP, and campaign management to drive ROI & reduce ACoS.</p>
+        <p>Targeted campaigns with smart bidding strategies to reduce ACoS and increase ROI.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Add Additional Sections -->
+<!-- 1. Features & Benefits -->
+<section class="container my-5">
+  <div class="text-center">
+    <h2 class="section-title">Why Choose Us?</h2>
+    <div class="row g-4 mt-3">
+      <div class="col-md-3">
+        <div class="feature-box">
+          <i class="fas fa-chart-line"></i>
+          <h6>Data-Driven Strategies</h6>
+          <p>Every decision is backed by real insights and analytics for maximum impact.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="feature-box">
+          <i class="fas fa-handshake"></i>
+          <h6>Transparent Process</h6>
+          <p>Clear communication, honest reporting, and accountability in every step.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="feature-box">
+          <i class="fas fa-users"></i>
+          <h6>Customer-Centric Approach</h6>
+          <p>We prioritize client satisfaction and measurable results over everything.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="feature-box">
+          <i class="fas fa-sync-alt"></i>
+          <h6>Continuous Growth</h6>
+          <p>Iterative optimization ensures your brand stays ahead in competitive markets.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section class="container my-5 bg-light rounded-4 p-5">
+  <div class="text-center">
+    <h2 class="section-title">Our Impact</h2>
+    <div class="row g-4 mt-4 text-center">
+      <div class="col-md-3">
+        <div class="stat-box">
+          <i class="fas fa-box-open"></i>
+          <h2>500+</h2>
+          <p>Brands Served</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stat-box">
+          <i class="fas fa-chart-line"></i>
+          <h2>200%</h2>
+          <p>Average Revenue Growth</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stat-box">
+          <i class="fas fa-globe"></i>
+          <h2>15+</h2>
+          <p>Marketplaces Supported</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stat-box">
+          <i class="fas fa-award"></i>
+          <h2>100+</h2>
+          <p>Successful Projects</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Workflow / How We Work -->
+<section class="container my-5">
+  <h2 class="section-title text-center">How We Work</h2>
+  <div class="row g-4 mt-4 text-center">
+    <div class="col-md-3">
+      <div class="process-box">
+        <i class="fas fa-search"></i>
+        <h6>Research</h6>
+        <p>Deep analysis of marketplace, competitors, and product trends.</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="process-box">
+        <i class="fas fa-pencil-ruler"></i>
+        <h6>Strategy</h6>
+        <p>Customized action plans for growth, optimization, and visibility.</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="process-box">
+        <i class="fas fa-bullhorn"></i>
+        <h6>Execution</h6>
+        <p>Implement campaigns, product listings, and ad strategies effectively.</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="process-box">
+        <i class="fas fa-chart-pie"></i>
+        <h6>Optimize & Report</h6>
+        <p>Continuous tracking, optimization, and reporting for measurable ROI.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Testimonials -->
-<section class="container-sm my-5">
-  <h3 class="section-title text-center">Client Success Stories</h3>
-  <div class="row g-4">
+<section class="container my-5">
+  <h2 class="section-title text-center">Client Success Stories</h2>
+  <div class="row g-4 mt-4">
     <div class="col-md-4">
-      <div class="testimonial">
-        <p><strong>“Sales up 2.5X in 60 days”</strong><br>— A brand owner after strategic listing revamp & PPC automation.</p>
+      <div class="testimonial-box">
+        <p><strong>"Sales increased 2.5X in 60 days"</strong><br>– Brand owner after strategic PPC campaigns.</p>
       </div>
     </div>
     <div class="col-md-4">
-      <div class="testimonial">
-        <p><strong>“120 SKUs launched seamlessly”</strong><br>— Seller scaled with zero downtime across marketplaces.</p>
+      <div class="testimonial-box">
+        <p><strong>"Seamless SKU launch across 120 products"</strong><br>– Seller scaled without downtime or errors.</p>
       </div>
     </div>
     <div class="col-md-4">
-      <div class="testimonial">
-        <p><strong>“FBA migration simplified”</strong><br>— Smooth transition with optimized logistics & inventory setup.</p>
+      <div class="testimonial-box">
+        <p><strong>"FBA migration simplified"</strong><br>– Optimized inventory & logistics for faster deliveries.</p>
       </div>
     </div>
   </div>
 </section>
 
-</main>
-
 <!-- Footer -->
 <footer>
-  <div class="container container-sm">
+  <div class="container">
     <div class="row">
       <div class="col-md-4 mb-3">
         <h5>Easy Ecom Wealth</h5>
